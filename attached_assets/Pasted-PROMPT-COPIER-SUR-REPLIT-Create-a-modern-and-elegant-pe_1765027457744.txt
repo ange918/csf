@@ -1,0 +1,73 @@
+PROMPT À COPIER SUR REPLIT
+Create a modern and elegant personal portfolio website using HTML + CSS + JavaScript only (no frameworks).
+This is for a Beninese Afro fashion artist, named Christelle FASSINOU, an accessoires designer, draping expert, costume stylist, and African interior decor artist.
+The brand identity must reflect African chic, fashion creativity, and professionalism.
+🎨 Design Guidelines
+Minimalist + Afro creative touch
+Elegant typography
+Rounded shapes, soft shadows
+Colors theme:
+Black: #000000
+Gold: #D4A017
+White: #FFFFFF
+Extra optional accent: #C1121F
+Use Heroicons SVG icons inline
+Fully responsive (mobile-first)
+Smooth scroll animations
+🧱 Website Structure
+Header (Sticky)
+Logo text: ANDYCHRIS
+Navigation: Accueil | À propos | Parcours | Galerie | Contact
+Hero Section
+Full background (portrait of the artist — placeholder image)
+Text:
+Christelle Sènan M. FASSINOU
+“Accessoiriste, Costumière & Décoratrice Afro”
+CTA buttons:
+Voir mes créations
+Me contacter
+À propos
+Photo + biography text: “Christelle FASSINOU, de nationalité béninoise, résidant à Porto-Novo… (include full biography text provided)”
+Short highlight badges:
++10 événements mode majeurs
+Trophée meilleur accessoiriste Afrique (2ᵉ place – Côte d’Ivoire)
+Parcours (Education & Expérience)
+Timeline vertical — clean cards
+Include:
+Diplômes (CEP, BEPC, BAC, BTS, Licence…)
+Expériences:
+Secrétaire SB CONSTRUCTION
+Assistante FBF
+CEO Andychris
+Compétences
+Icons + tags:
+Accessoires de mode
+Draping
+Costumes artistiques (scènes, clips, films)
+Décoration intérieure afro
+Designing
+Galerie
+Grid of 6–9 creative work placeholders
+Hover zoom & lightbox
+Contact
+Contact form: Nom, Email, Message
+WhatsApp + Phone + Email icons:
+67386959 (WhatsApp)
+67644564 (Appel)
+Email: Andychriscreat@gmail.com
+Location: Quartier Avakpa, Porto-Novo, Bénin
+Footer
+Very minimal: © ANDYCHRIS — Tous droits réservés
+⚙️ Technical Requirements
+✔️ HTML / CSS / JS only
+✔️ Clean folder structure:
+Copier le code
+
+index.html
+style.css
+script.js
+/assets/images
+✔️ Smooth scroll
+✔️ Lazy-load on gallery images
+✔️ Professional design quality
+Please provide complete optimized code for production.
