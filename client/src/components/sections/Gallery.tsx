@@ -2,24 +2,49 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
-import img1 from "@assets/generated_images/african_gold_jewelry_accessories.png";
-import img2 from "@assets/generated_images/fashion_draping_mannequin.png";
-import img3 from "@assets/generated_images/african_chic_interior_decor.png";
-import img4 from "@assets/generated_images/artistic_costume_design.png";
-
-// Placeholder images for the 35 items. 
-// REPLACE the 'src' values below with your direct ImgBB links (e.g., "https://i.ibb.co/...")
+// Direct ImgBB links provided by user
 const galleryImages = [
-  img1, img2, img3, img4, img1, img2, img3, img4, img1, 
-  img2, img3, img4, img1, img2, img3, img4, img1, img2,
-  img3, img4, img1, img2, img3, img4, img1, img2, img3,
-  img4, img1, img2, img3, img4, img1, img2, img3
+  "https://i.ibb.co/FbcYKvmz/Whats-App-Image-2025-12-05-at-22-21-20-1.jpg",
+  "https://i.ibb.co/pj068TGz/Whats-App-Image-2025-12-05-at-22-21-20-2.jpg",
+  "https://i.ibb.co/jPC4m9Bb/Whats-App-Image-2025-12-05-at-22-21-21.jpg",
+  "https://i.ibb.co/vCTZ7bQv/Whats-App-Image-2025-12-05-at-22-21-21-2.jpg",
+  "https://i.ibb.co/bj7FykJ9/Whats-App-Image-2025-12-05-at-22-21-21-1.jpg",
+  "https://i.ibb.co/xt2zh06q/Whats-App-Image-2025-12-05-at-22-21-22.jpg",
+  "https://i.ibb.co/xS1pS9BH/Whats-App-Image-2025-12-05-at-22-21-22-1.jpg",
+  "https://i.ibb.co/5hhK1jp6/Whats-App-Image-2025-12-05-at-22-21-23-1.jpg",
+  "https://i.ibb.co/qLY0JsCM/Whats-App-Image-2025-12-05-at-22-21-23.jpg",
+  "https://i.ibb.co/C51wS785/Whats-App-Image-2025-12-05-at-22-21-24.jpg",
+  "https://i.ibb.co/HDB8NWkr/Whats-App-Image-2025-12-05-at-22-21-23-2.jpg",
+  "https://i.ibb.co/xKFCJtg1/Whats-App-Image-2025-12-05-at-22-21-24-1.jpg",
+  "https://i.ibb.co/3mHGgyMN/Whats-App-Image-2025-12-05-at-22-21-24-2.jpg",
+  "https://i.ibb.co/kkbXcpm/Whats-App-Image-2025-12-05-at-22-21-24-3.jpg",
+  "https://i.ibb.co/35qBQNr3/Whats-App-Image-2025-12-05-at-22-21-25.jpg",
+  "https://i.ibb.co/v47XWbg0/Whats-App-Image-2025-12-05-at-22-21-25-1.jpg",
+  "https://i.ibb.co/vvTQXtLX/Whats-App-Image-2025-12-05-at-22-21-25-2.jpg",
+  "https://i.ibb.co/MD54PLJg/Whats-App-Image-2025-12-05-at-22-21-25-3.jpg",
+  "https://i.ibb.co/cSk4pv27/Whats-App-Image-2025-12-05-at-22-21-26.jpg",
+  "https://i.ibb.co/9kq8chhK/Whats-App-Image-2025-12-05-at-22-21-26-1.jpg",
+  "https://i.ibb.co/jZ3c53Yh/Whats-App-Image-2025-12-05-at-22-21-26-2.jpg",
+  "https://i.ibb.co/kVDsFtZJ/Whats-App-Image-2025-12-05-at-22-21-26-3.jpg",
+  "https://i.ibb.co/B5bxQFFN/Whats-App-Image-2025-12-05-at-22-21-27.jpg",
+  "https://i.ibb.co/rfNprdj4/Whats-App-Image-2025-12-05-at-22-21-27-1.jpg",
+  "https://i.ibb.co/sp4yzN8x/Whats-App-Image-2025-12-05-at-22-21-27-2.jpg",
+  "https://i.ibb.co/hJQrWvzv/Whats-App-Image-2025-12-05-at-22-21-27-3.jpg",
+  "https://i.ibb.co/Y7T8cQ08/Whats-App-Image-2025-12-05-at-22-21-28.jpg",
+  "https://i.ibb.co/h1hQsQ9Z/Whats-App-Image-2025-12-05-at-22-21-28-1.jpg",
+  "https://i.ibb.co/SwLfgMFm/Whats-App-Image-2025-12-05-at-22-21-28-2.jpg",
+  "https://i.ibb.co/xKrNJ3Rx/Whats-App-Image-2025-12-05-at-22-21-29.jpg",
+  "https://i.ibb.co/Kpb2Sb5y/Whats-App-Image-2025-12-05-at-22-21-29-1.jpg",
+  "https://i.ibb.co/1GqT4vD3/Whats-App-Image-2025-12-05-at-22-21-29-2.jpg",
+  "https://i.ibb.co/SX6Tmnsq/Whats-App-Image-2025-12-05-at-22-21-29-3.jpg",
+  "https://i.ibb.co/TDJCnrSx/Whats-App-Image-2025-12-05-at-22-21-30.jpg",
+  "https://i.ibb.co/1ynfNgr/Whats-App-Image-2025-12-05-at-22-21-30-1.jpg"
 ];
 
 const galleryItems = galleryImages.map((src, index) => ({
   id: index + 1,
   src: src,
-  title: `Création ${index + 1}` // Placeholder title
+  title: `Création ${index + 1}`
 }));
 
 export default function Gallery() {
@@ -40,7 +65,7 @@ export default function Gallery() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.05 }} // Faster stagger for many items
+              transition={{ delay: index * 0.02 }} 
               className="group relative cursor-pointer overflow-hidden rounded-lg aspect-square bg-gray-100"
               onClick={() => setSelectedImage(item)}
             >
