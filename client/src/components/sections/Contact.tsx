@@ -56,7 +56,6 @@ export default function Contact() {
                 <div>
                   <h4 className="text-lg font-bold text-white">Téléphone & WhatsApp</h4>
                   <p className="text-gray-400">+229 67 38 69 59 (WhatsApp)</p>
-                  <p className="text-gray-400">+229 67 64 45 64 (Appel)</p>
                 </div>
               </div>
 
