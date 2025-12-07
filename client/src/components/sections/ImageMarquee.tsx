@@ -39,7 +39,7 @@ export default function ImageMarquee() {
               <img
                 src={src}
                 alt={`Realisation ${index}`}
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover transition-all duration-500"
               />
             </div>
           ))}
