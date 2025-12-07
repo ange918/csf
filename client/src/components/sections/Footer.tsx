@@ -55,7 +55,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
           <div>
-            <h3 className="text-2xl font-serif font-bold text-white mb-6 tracking-wider">ANDYCHRIS</h3>
+            <div className="mb-6">
+              <img src="https://i.ibb.co/LzfYRzD8/log.jpg" alt="ANDYCHRIS" className="h-16 w-auto rounded-full" />
+            </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               L'excellence de la mode et de la décoration afro-chic. Créations uniques, draping et costumes artistiques.
             </p>

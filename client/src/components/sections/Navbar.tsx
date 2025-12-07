@@ -43,9 +43,9 @@ export default function Navbar() {
         <a 
           href="#home" 
           onClick={(e) => scrollToSection(e, "#home")}
-          className="text-2xl md:text-3xl font-serif font-bold text-white tracking-widest hover:text-primary transition-colors"
+          className="hover:opacity-80 transition-opacity"
         >
-          ANDYCHRIS
+          <img src="https://i.ibb.co/LzfYRzD8/log.jpg" alt="ANDYCHRIS" className="h-12 w-auto md:h-16 rounded-full" />
         </a>
 
         {/* Desktop Menu */}
