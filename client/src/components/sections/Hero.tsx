@@ -3,7 +3,10 @@ import heroImage from "@assets/generated_images/portrait_of_african_fashion_desi
 
 export default function Hero() {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -25,7 +28,7 @@ export default function Hero() {
             La touche Afro-Chic
           </h2>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight">
-            Christelle Sènan M. <br /> FASSINOU
+            ANDY CHRIS
           </h1>
           <p className="text-white/90 text-xl md:text-2xl font-light mb-10 italic max-w-3xl mx-auto">
             “Accessoiriste, Costumière & Décoratrice Afro”
@@ -36,7 +39,9 @@ export default function Hero() {
               href="#gallery"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector("#gallery")?.scrollIntoView({ behavior: "smooth" });
+                document
+                  .querySelector("#gallery")
+                  ?.scrollIntoView({ behavior: "smooth" });
               }}
               className="bg-primary text-white hover:bg-white hover:text-black px-8 py-4 rounded-full uppercase tracking-widest text-sm font-bold transition-all duration-300 min-w-[200px]"
             >
@@ -46,7 +51,9 @@ export default function Hero() {
               href="#contact"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+                document
+                  .querySelector("#contact")
+                  ?.scrollIntoView({ behavior: "smooth" });
               }}
               className="border border-white text-white hover:border-primary hover:text-primary px-8 py-4 rounded-full uppercase tracking-widest text-sm font-bold transition-all duration-300 min-w-[200px]"
             >
