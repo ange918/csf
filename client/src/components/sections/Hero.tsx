@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src={heroImage}
+          src="https://i.ibb.co/Q7rWQvYB/Whats-App-Image-2025-12-06-at-14-48-05.jpg"
           alt="Christelle FASSINOU - Afro Fashion Artist"
           className="w-full h-full object-cover object-center"
         />

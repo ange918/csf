@@ -17,7 +17,7 @@ export default function About() {
           >
             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl relative z-10">
               <img 
-                src="https://i.ibb.co/Q7rWQvYB/Whats-App-Image-2025-12-06-at-14-48-05.jpg" 
+                src="https://i.ibb.co/LzfYRzD8/log.jpg" 
                 alt="Christelle FASSINOU" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
