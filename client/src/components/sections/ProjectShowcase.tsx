@@ -3,22 +3,6 @@ import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
-const images = [
-  "https://i.ibb.co/JFdWK3Q2/Whats-App-Image-2025-12-07-at-07-22-38-2-Copie.jpg",
-  "https://i.ibb.co/gMKT9rWQ/Whats-App-Image-2025-12-07-at-07-22-38-3-Copie.jpg",
-  "https://i.ibb.co/pBZ5j5K6/Whats-App-Image-2025-12-07-at-07-22-39-Copie.jpg",
-  "https://i.ibb.co/qMHc93Bd/Whats-App-Image-2025-12-07-at-07-22-39-1-Copie.jpg",
-  "https://i.ibb.co/4Z28cZkB/Whats-App-Image-2025-12-07-at-07-22-33.jpg",
-  "https://i.ibb.co/chKmbbDP/Whats-App-Image-2025-12-07-at-07-22-33-1.jpg",
-  "https://i.ibb.co/hRdPnM7q/Whats-App-Image-2025-12-07-at-07-22-34.jpg",
-  "https://i.ibb.co/WvrJtjYq/Whats-App-Image-2025-12-07-at-07-22-34-1.jpg",
-  "https://i.ibb.co/HpKBqLRG/Whats-App-Image-2025-12-07-at-07-22-34-2.jpg",
-  "https://i.ibb.co/gLzqnndD/Whats-App-Image-2025-12-07-at-07-22-35.jpg",
-  "https://i.ibb.co/7tkfJkgV/Whats-App-Image-2025-12-07-at-07-22-35-1.jpg",
-  "https://i.ibb.co/NdvDf1vz/Whats-App-Image-2025-12-07-at-07-22-36.jpg",
-  "https://i.ibb.co/DPH2YVNd/Whats-App-Image-2025-12-07-at-07-22-37-2.jpg"
-];
-
 const newCollectionImages = [
   "https://i.ibb.co/fcwhPYG/Whats-App-Image-2025-12-11-at-15-52-52.jpg",
   "https://i.ibb.co/P8pLPCk/Whats-App-Image-2025-12-11-at-15-52-51.jpg",
@@ -52,106 +36,58 @@ const projects = [
     title: "Coussins de fauteuil",
     description: "Confort et élégance avec nos coussins aux motifs africains uniques.",
     tags: ["Décoration", "Confort"],
-    image: images[0]
+    image: "https://i.ibb.co/MxGtZ0MR/Whats-App-Image-2025-12-07-at-07-22-38.jpg"
   },
   {
     title: "Décor mural",
     description: "Habillez vos murs avec nos créations artistiques originales.",
     tags: ["Art", "Décoration"],
-    image: images[1]
+    image: "https://i.ibb.co/hRdPnM7q/Whats-App-Image-2025-12-07-at-07-22-34.jpg"
   },
   {
     title: "Poufs",
     description: "Assises d'appoint confortables et colorées pour votre salon.",
     tags: ["Mobilier", "Confort"],
-    image: images[2]
+    image: "https://i.ibb.co/pB7PzHwM/Whats-App-Image-2025-12-07-at-07-22-36-2.jpg"
   },
   {
     title: "Boîtes cadeau",
     description: "Emballages soignés et réutilisables pour vos présents.",
     tags: ["Accessoire", "Cadeau"],
-    image: images[3]
+    image: "https://i.ibb.co/pBZ5j5K6/Whats-App-Image-2025-12-07-at-07-22-39-Copie.jpg"
   },
   {
     title: "Mini tableau wax",
     description: "Petites touches artistiques en tissu wax pour égayer vos espaces.",
     tags: ["Art", "Wax"],
-    image: images[4]
+    image: "https://i.ibb.co/7tc68K4N/Whats-App-Image-2025-12-07-at-07-22-37-1.jpg"
   },
   {
     title: "Carte d'Afrique en wax",
     description: "Représentation stylisée du continent africain en tissu.",
     tags: ["Décoration", "Culture"],
-    image: images[5]
+    image: "https://i.ibb.co/HpKBqLRG/Whats-App-Image-2025-12-07-at-07-22-34-2.jpg"
   },
   {
     title: "Sous tasse",
     description: "Protégez vos tables avec style grâce à nos sous-tasses artisanaux.",
     tags: ["Art de la table"],
-    image: images[6]
-  },
-  {
-    title: "Guirlandes",
-    description: "Décoration festive et colorée pour toutes vos occasions.",
-    tags: ["Décoration", "Fête"],
-    image: images[7]
-  },
-  {
-    title: "Bouteille déco",
-    description: "Bouteilles recyclées et décorées à la main pour une touche unique.",
-    tags: ["Recyclage", "Art"],
-    image: images[8]
-  },
-  {
-    title: "Porte-clés",
-    description: "Accessoires du quotidien aux couleurs vibrantes.",
-    tags: ["Accessoire", "Quotidien"],
-    image: images[9]
-  },
-  {
-    title: "Porte-bic en jacinthe et cauris",
-    description: "Rangement de bureau naturel orné de coquillages cauris.",
-    tags: ["Bureau", "Naturel"],
-    image: images[10]
-  },
-  {
-    title: "Carte menu mariage ethnique",
-    description: "Papeterie événementielle personnalisée au style ethnique chic.",
-    tags: ["Mariage", "Papeterie"],
-    image: images[11]
+    image: "https://i.ibb.co/qMHc93Bd/Whats-App-Image-2025-12-07-at-07-22-39-1-Copie.jpg"
   },
   {
     title: "Chemin de table et torchons",
     description: "Linge de maison aux motifs traditionnels pour une table accueillante.",
     tags: ["Linge de maison", "Tradition"],
-    image: images[12]
-  },
-  {
-    title: "Éventail",
-    description: "Accessoire élégant et pratique pour se rafraîchir avec style.",
-    tags: ["Accessoire", "Mode"],
-    image: images[0]
-  },
-  {
-    title: "Déco événement",
-    description: "Scénographie complète pour vos événements aux thèmes africains.",
-    tags: ["Événementiel", "Décoration"],
-    image: images[1]
-  },
-  {
-    title: "Fond photo studio à l'africaine",
-    description: "Décors immersifs pour vos séances photos professionnelles.",
-    tags: ["Studio", "Photo"],
-    image: images[2]
+    image: "https://i.ibb.co/7tkfJkgV/Whats-App-Image-2025-12-07-at-07-22-35-1.jpg"
   },
   {
     title: "Mobiliers en attente",
     description: "Projets de mobilier sur mesure en cours de réalisation.",
     tags: ["Mobilier", "Sur Mesure"],
-    image: images[3]
+    image: "https://i.ibb.co/chKmbbDP/Whats-App-Image-2025-12-07-at-07-22-33-1.jpg"
   },
   {
-    title: "Collection Exclusive",
+    title: "Les merveilles des cauris",
     description: "Une sélection variée de nos plus belles réalisations. Cliquez pour découvrir notre galerie complète.",
     tags: ["Collection", "Galerie", "Exclusif"],
     image: newCollectionImages[0],
@@ -265,6 +201,17 @@ export default function ProjectShowcase() {
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   {project.description}
                 </p>
+                {project.galleryImages && (
+                  <button 
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      openGallery(project.galleryImages!);
+                    }}
+                    className="mt-4 px-6 py-2 border border-primary text-primary hover:bg-primary hover:text-white transition-colors uppercase text-sm font-medium tracking-wider rounded-full"
+                  >
+                    Voir la galerie
+                  </button>
+                )}
               </div>
             </motion.div>
           ))}
