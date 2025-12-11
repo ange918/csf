@@ -19,7 +19,7 @@ export default function About() {
               <img 
                 src="https://i.ibb.co/LzfYRzD8/log.jpg" 
                 alt="Christelle FASSINOU" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
               />
             </div>
             {/* Decorative background element */}

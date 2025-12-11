@@ -167,7 +167,7 @@ export default function ProjectShowcase() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transform group-hover/card:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover object-center transform group-hover/card:scale-105 transition-transform duration-700"
                   />
                   {project.galleryImages && (
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 bg-black/30">
