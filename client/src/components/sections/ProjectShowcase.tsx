@@ -134,7 +134,7 @@ export default function ProjectShowcase() {
             viewport={{ once: true }}
             className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
           >
-            Nos Créalisations
+            Nos Réalisations
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

@@ -116,7 +116,7 @@ export default function Footer() {
                 <div>
                   <span className="block text-white font-medium mb-1">Téléphone</span>
                   <a href="tel:+2290161791627" className="text-gray-400 text-sm hover:text-white transition-colors">
-                    +229 01 61 79 16 27
+                    01 61 79 16 27
                   </a>
                 </div>
               </div>

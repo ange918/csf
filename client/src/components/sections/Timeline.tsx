@@ -3,14 +3,14 @@ import { GraduationCap, Briefcase } from "lucide-react";
 
 export default function Timeline() {
   const education = [
-    { year: "2018", title: "Licence Professionnelle", desc: "Arts et Culture" },
+    { year: "2018", title: "Licence Professionnelle", desc: "Anglais Américain" },
     { year: "2015", title: "BTS Communication", desc: "Communication d'entreprise" },
-    { year: "2012", title: "BAC", desc: "Série Littéraire" },
+    { year: "2012", title: "BAC", desc: "Série Scientifique" },
   ];
 
   const experience = [
     { year: "Présent", title: "CEO Andychris", desc: "Direction artistique et création de la marque" },
-    { year: "2019-2021", title: "Assistante FBF", desc: "Fédération Béninoise de Football" },
+    { year: "2019-2021", title: "Assistante ASA à la FBF", desc: "Fédération Béninoise de Football" },
     { year: "2016-2018", title: "Secrétaire", desc: "SB CONSTRUCTION" },
   ];
 
